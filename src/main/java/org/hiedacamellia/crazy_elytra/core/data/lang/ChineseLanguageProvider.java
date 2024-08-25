@@ -25,7 +25,6 @@ public class ChineseLanguageProvider extends LanguageProvider {
         add("config.crazy_elytra.infinitefireworkacceleration.desc", "如果为true，则玩家可以被烟花无限加速");
         add("config.crazy_elytra.fireworkacceleration", "烟花的加速度");
         add("config.crazy_elytra.comfirm", "确认");
-        add("mod.crazy_elytra", "疯狂鞘翅");
         add("enchantment.crazy_elytra.kamikaze_elytra", "神风鞘翅");
         add("deathScreen.title.kamikaze", "目标已摧毁！");
         add("death.attack.explosion.suicide", "");

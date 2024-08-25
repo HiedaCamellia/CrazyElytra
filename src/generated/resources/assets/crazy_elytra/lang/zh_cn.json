@@ -1,6 +1,10 @@
 {
   "config.crazy_elytra.airresistance": "空气阻力",
   "config.crazy_elytra.comfirm": "确认",
+  "config.crazy_elytra.enableairresistancewithheight": "启用高度相关的空气阻力",
+  "config.crazy_elytra.enableairresistancewithheight.desc": "如果为true，则空气阻力将与高度有关",
+  "config.crazy_elytra.enableairresistancewithspeed": "启用速度相关的空气阻力",
+  "config.crazy_elytra.enableairresistancewithspeed.desc": "如果为true，则空气阻力将与速度有关",
   "config.crazy_elytra.enableelytra": "启用疯狂鞘翅",
   "config.crazy_elytra.enableelytra.desc": "如果为true，则疯狂鞘翅将启用",
   "config.crazy_elytra.fireworkacceleration": "烟花的加速度",
