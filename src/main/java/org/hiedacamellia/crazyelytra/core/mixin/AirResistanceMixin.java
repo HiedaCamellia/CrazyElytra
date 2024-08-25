@@ -1,8 +1,8 @@
-package org.hiedacamellia.unlimitedelytra.core.mixin;
+package org.hiedacamellia.crazyelytra.core.mixin;
 
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.phys.Vec3;
-import org.hiedacamellia.unlimitedelytra.core.config.Config;
+import org.hiedacamellia.crazyelytra.core.config.Config;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArg;

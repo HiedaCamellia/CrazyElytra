@@ -1,4 +1,4 @@
-package org.hiedacamellia.unlimitedelytra.core.debug;
+package org.hiedacamellia.crazyelytra.core.debug;
 
 
 import net.minecraft.client.Minecraft;
@@ -6,16 +6,16 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.neoforged.fml.loading.FMLEnvironment;
-import org.hiedacamellia.unlimitedelytra.UnlimitedElytra;
-import org.hiedacamellia.unlimitedelytra.core.config.Config;
+import org.hiedacamellia.crazyelytra.CrazyElytra;
+import org.hiedacamellia.crazyelytra.core.config.Config;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Debug {
 
-    private static String prefix = "[§a无限鞘翅§r]";
+    private static String prefix = "[§a疯狂鞘翅§r]";
     private static Boolean debugConfig = Config.DEBUG.get();
-    private static Logger logger = LoggerFactory.getLogger(UnlimitedElytra.MODID);
+    private static Logger logger = LoggerFactory.getLogger(CrazyElytra.MODID);
 
 
     public static void debug(String message){

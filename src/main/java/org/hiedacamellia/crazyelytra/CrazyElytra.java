@@ -1,4 +1,4 @@
-package org.hiedacamellia.unlimitedelytra;
+package org.hiedacamellia.crazyelytra;
 
 
 import net.neoforged.bus.api.IEventBus;
@@ -6,17 +6,17 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
-import org.hiedacamellia.unlimitedelytra.core.config.*;
-import org.hiedacamellia.unlimitedelytra.core.data.Data;
+import org.hiedacamellia.crazyelytra.core.config.*;
+import org.hiedacamellia.crazyelytra.core.data.Data;
 
 import java.util.function.Supplier;
 
-@Mod(UnlimitedElytra.MODID)
-public class UnlimitedElytra {
+@Mod(CrazyElytra.MODID)
+public class CrazyElytra {
 
-    public static final String MODID = "unlimitedelytra";
+    public static final String MODID = "crazyelytra";
 
-    public UnlimitedElytra(IEventBus modEventBus, ModContainer modContainer){
+    public CrazyElytra(IEventBus modEventBus, ModContainer modContainer){
         modEventBus.addListener(Data::onGatherData);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
         modContainer.registerExtensionPoint(IConfigScreenFactory.class, (Supplier<IConfigScreenFactory>) ScreenProvider::new);

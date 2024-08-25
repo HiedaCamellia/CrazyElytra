@@ -1,4 +1,4 @@
-package org.hiedacamellia.unlimitedelytra.core.mixin;
+package org.hiedacamellia.crazyelytra.core.mixin;
 
 import net.minecraft.network.protocol.game.ClientboundSetEntityMotionPacket;
 import org.spongepowered.asm.mixin.Mixin;

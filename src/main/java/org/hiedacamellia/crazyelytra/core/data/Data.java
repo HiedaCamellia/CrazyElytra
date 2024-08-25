@@ -1,8 +1,8 @@
-package org.hiedacamellia.unlimitedelytra.core.data;
+package org.hiedacamellia.crazyelytra.core.data;
 
 import net.neoforged.neoforge.data.event.GatherDataEvent;
-import org.hiedacamellia.unlimitedelytra.core.data.lang.ChineseLanguageProvider;
-import org.hiedacamellia.unlimitedelytra.core.data.lang.EnglishLanguageProvider;
+import org.hiedacamellia.crazyelytra.core.data.lang.ChineseLanguageProvider;
+import org.hiedacamellia.crazyelytra.core.data.lang.EnglishLanguageProvider;
 
 public class Data {
     public static void onGatherData(GatherDataEvent event) {

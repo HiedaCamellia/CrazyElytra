@@ -1,4 +1,4 @@
-package org.hiedacamellia.unlimitedelytra.core.config;
+package org.hiedacamellia.crazyelytra.core.config;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;

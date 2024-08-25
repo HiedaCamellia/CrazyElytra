@@ -1,4 +1,4 @@
-package org.hiedacamellia.unlimitedelytra.core.config;
+package org.hiedacamellia.crazyelytra.core.config;
 
 import net.neoforged.neoforge.common.ModConfigSpec;
 
@@ -13,9 +13,9 @@ public class Config
 
 
     public static final ModConfigSpec.BooleanValue EnableElytra = BUILDER
-            .comment("Enable the UnlimitedElytra")
-            .comment("启用无限鞘翅")
-            .define("Enable UnlimitedElytra", true);
+            .comment("Enable the CrazyElytra")
+            .comment("启用疯狂鞘翅")
+            .define("Enable CrazyElytra", true);
 
 
     public static final ModConfigSpec.ConfigValue<Double> AirResistance = BUILDER
