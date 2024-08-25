@@ -17,6 +17,10 @@ public class EnglishLanguageProvider extends LanguageProvider {
         add("config.crazyelytra.enableelytra", "Enable Crazy Elytra");
         add("config.crazyelytra.enableelytra.desc", "If true, the Crazy Elytra will be enabled");
         add("config.crazyelytra.airresistance", "Air Resistance");
+        add("config.crazyelytra.enableairresistancewithspeed", "Enable Air Resistance With Speed");
+        add("config.crazyelytra.enableairresistancewithspeed.desc", "If true, the air resistance will be related to the speed");
+        add("config.crazyelytra.enableairresistancewithheight", "Enable Air Resistance With Height");
+        add("config.crazyelytra.enableairresistancewithheight.desc", "If true, the air resistance will be related to the height");
         add("config.crazyelytra.infinitefireworkacceleration", "Infinite FireWork Acceleration");
         add("config.crazyelytra.infinitefireworkacceleration.desc", "If true, the player can be infinitely accelerated by fireworks");
         add("config.crazyelytra.fireworkacceleration", "The acceleration of the firework");
