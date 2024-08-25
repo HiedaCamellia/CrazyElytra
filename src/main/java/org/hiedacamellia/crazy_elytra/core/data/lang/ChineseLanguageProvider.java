@@ -17,10 +17,8 @@ public class ChineseLanguageProvider extends LanguageProvider {
         add("config.crazy_elytra.enableelytra", "启用疯狂鞘翅");
         add("config.crazy_elytra.enableelytra.desc", "如果为true，则疯狂鞘翅将启用");
         add("config.crazy_elytra.airresistance", "空气阻力");
-        add("config.crazy_elytra.enableairresistancewithspeed", "启用速度相关的空气阻力");
-        add("config.crazy_elytra.enableairresistancewithspeed.desc", "如果为true，则空气阻力将与速度有关");
-        add("config.crazy_elytra.enableairresistancewithheight", "启用高度相关的空气阻力");
-        add("config.crazy_elytra.enableairresistancewithheight.desc", "如果为true，则空气阻力将与高度有关");
+        add("config.crazy_elytra.enablerealphysic", "启用真实物理");
+        add("config.crazy_elytra.enablerealphysic.desc", "如果为true，则将在真实的物理下计算速度");
         add("config.crazy_elytra.infinitefireworkacceleration", "启用烟花的无限加速");
         add("config.crazy_elytra.infinitefireworkacceleration.desc", "如果为true，则玩家可以被烟花无限加速");
         add("config.crazy_elytra.fireworkacceleration", "烟花的加速度");

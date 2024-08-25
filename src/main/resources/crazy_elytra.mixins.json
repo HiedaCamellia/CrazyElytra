@@ -5,7 +5,7 @@
     "compatibilityLevel": "JAVA_21",
     "refmap": "unlimitedelytra.refmap.json",
     "mixins": [
-        "AirResistanceMixin",
+      "TravelMixin",
         "ClientboundSetEntityMotionPacketMixin",
         "FireWorkMixin",
         "MixinEnchantment"

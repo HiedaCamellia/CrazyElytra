@@ -17,15 +17,10 @@ public class Config
             .comment("启用疯狂鞘翅")
             .define("Enable CrazyElytra", true);
 
-    public static final ModConfigSpec.BooleanValue EnableAirResistanceWithSpeed = BUILDER
-            .comment("Enable the air resistance with speed")
-            .comment("启用速度相关的空气阻力")
-            .define("Enable Air Resistance With Speed", false);
-
-    public static final ModConfigSpec.BooleanValue EnableAirResistanceWithHeight = BUILDER
-            .comment("Enable the air resistance with height")
-            .comment("启用高度相关的空气阻力")
-            .define("Enable Air Resistance With Height", false);
+    public static final ModConfigSpec.BooleanValue EnableRealPhysic = BUILDER
+            .comment("Enable the real physic")
+            .comment("启用真实物理")
+            .define("Enable Real Physic", false);
 
     public static final ModConfigSpec.ConfigValue<Double> AirResistance = BUILDER
             .comment("The air resistance of the elytra")
