@@ -16,7 +16,7 @@ public class ConfigScreen extends Screen {
     EditBox FireWorkAcceleration;
 
     public ConfigScreen() {
-        super(Component.translatable("config.unlimitedelytra.title"));
+        super(Component.translatable("config.crazy_elytra.title"));
     }
 
     @Override
@@ -27,28 +27,28 @@ public class ConfigScreen extends Screen {
             Config.EnableElytra.set(!Config.EnableElytra.get());
             e.setMessage(Component.literal(Config.EnableElytra.get().toString()));
         }).bounds(this.width - 60, 60,40,15)
-                .tooltip(Tooltip.create(Component.translatable("config.unlimitedelytra.enableelytra.desc"))).build());
+                .tooltip(Tooltip.create(Component.translatable("config.crazy_elytra.enableelytra.desc"))).build());
 
         this.addRenderableWidget(new Button.Builder(Component.literal(Config.EnableAirResistanceWithSpeed.get().toString()),e -> {
             Config.EnableAirResistanceWithSpeed.set(!Config.EnableAirResistanceWithSpeed.get());
             e.setMessage(Component.literal(Config.EnableAirResistanceWithSpeed.get().toString()));
         }).bounds(this.width - 60, 80,40,15)
-                .tooltip(Tooltip.create(Component.translatable("config.unlimitedelytra.enableairresistancewithspeed.desc"))).build());
+                .tooltip(Tooltip.create(Component.translatable("config.crazy_elytra.enableairresistancewithspeed.desc"))).build());
 
         this.addRenderableWidget(new Button.Builder(Component.literal(Config.EnableAirResistanceWithHeight.get().toString()),e -> {
             Config.EnableAirResistanceWithHeight.set(!Config.EnableAirResistanceWithHeight.get());
             e.setMessage(Component.literal(Config.EnableAirResistanceWithHeight.get().toString()));
         }).bounds(this.width - 60, 100,40,15)
-                .tooltip(Tooltip.create(Component.translatable("config.unlimitedelytra.enableairresistancewithheight.desc"))).build());
+                .tooltip(Tooltip.create(Component.translatable("config.crazy_elytra.enableairresistancewithheight.desc"))).build());
 
         this.addRenderableWidget(new Button.Builder(Component.literal(Config.InfiniteFireWorkAcceleration.get().toString()),e -> {
             Config.InfiniteFireWorkAcceleration.set(!Config.InfiniteFireWorkAcceleration.get());
             e.setMessage(Component.literal(Config.InfiniteFireWorkAcceleration.get().toString()));
-        }).bounds(this.width - 60, 140,40,15)
-                .tooltip(Tooltip.create(Component.translatable("config.unlimitedelytra.infinitefireworkacceleration.desc"))).build());
+        }).bounds(this.width - 60, 100,40,15)
+                .tooltip(Tooltip.create(Component.translatable("config.crazy_elytra.infinitefireworkacceleration.desc"))).build());
 
 
-        this.addRenderableWidget(new Button.Builder(Component.translatable("config.unlimitedelytra.comfirm"),e -> {
+        this.addRenderableWidget(new Button.Builder(Component.translatable("config.crazy_elytra.comfirm"),e -> {
             onClose();
         }).bounds(this.width/2 - 20  , this.height-30,40,15).build());
 
@@ -69,20 +69,20 @@ public class ConfigScreen extends Screen {
         int h = graphics.guiHeight();
         int w = graphics.guiWidth();
 
-        String titleStr = Component.translatable("config.unlimitedelytra.title").getString();
+        String titleStr = Component.translatable("config.crazy_elytra.title").getString();
         graphics.drawString(this.font, titleStr, w / 2 - font.width(titleStr) / 2,  20, 0xFFFFFF,false);
 
-        String enableelytra = Component.translatable("config.unlimitedelytra.enableelytra").getString();
+        String enableelytra = Component.translatable("config.crazy_elytra.enableelytra").getString();
         graphics.drawString(this.font, enableelytra, 20,  60, 0xFFFFFF,false);
-        String enableairresistancewithspeed = Component.translatable("config.unlimitedelytra.enableairresistancewithspeed").getString();
+        String enableairresistancewithspeed = Component.translatable("config.crazy_elytra.enableairresistancewithspeed").getString();
         graphics.drawString(this.font, enableairresistancewithspeed, 20,  80, 0xFFFFFF,false);
-        String enableairresistancewithheight = Component.translatable("config.unlimitedelytra.enableairresistancewithheight").getString();
+        String enableairresistancewithheight = Component.translatable("config.crazy_elytra.enableairresistancewithheight").getString();
         graphics.drawString(this.font, enableairresistancewithheight, 20,  100, 0xFFFFFF,false);
-        String airresistance = Component.translatable("config.unlimitedelytra.airresistance").getString();
+        String airresistance = Component.translatable("config.crazy_elytra.airresistance").getString();
         graphics.drawString(this.font, airresistance, 20,  120, 0xFFFFFF,false);
-        String infinitefireworkacceleration = Component.translatable("config.unlimitedelytra.infinitefireworkacceleration").getString();
+        String infinitefireworkacceleration = Component.translatable("config.crazy_elytra.infinitefireworkacceleration").getString();
         graphics.drawString(this.font, infinitefireworkacceleration, 20,  140, 0xFFFFFF,false);
-        String fireworkacceleration = Component.translatable("config.unlimitedelytra.fireworkacceleration").getString();
+        String fireworkacceleration = Component.translatable("config.crazy_elytra.fireworkacceleration").getString();
         graphics.drawString(this.font, fireworkacceleration, 20,  160, 0xFFFFFF,false);
     }
 

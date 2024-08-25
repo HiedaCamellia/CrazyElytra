@@ -7,7 +7,7 @@ import org.hiedacamellia.crazyelytra.CrazyElytra;
 public class ChineseLanguageProvider extends LanguageProvider {
 
     public ChineseLanguageProvider(PackOutput output) {
-        super(output, CrazyElytra.MODID, "zh_cn");
+        super(output, CrazyElytra.MOD_ID, "zh_cn");
     }
 
     @Override
@@ -25,5 +25,9 @@ public class ChineseLanguageProvider extends LanguageProvider {
         add("config.crazyelytra.infinitefireworkacceleration.desc", "如果为true，则玩家可以被烟花无限加速");
         add("config.crazyelytra.fireworkacceleration", "烟花的加速度");
         add("config.crazyelytra.comfirm", "确认");
+        add("mod.crazy_elytra", "疯狂鞘翅");
+        add("enchantment.crazy_elytra.kamikaze_elytra", "神风鞘翅");
+        add("deathScreen.title.kamikaze", "目标已摧毁！");
+        add("death.attack.explosion.suicide", "");
     }
 }

@@ -15,7 +15,7 @@ public class Debug {
 
     private static String prefix = "[§a疯狂鞘翅§r]";
     private static Boolean debugConfig = Config.DEBUG.get();
-    private static Logger logger = LoggerFactory.getLogger(CrazyElytra.MODID);
+    private static Logger logger = LoggerFactory.getLogger(CrazyElytra.MOD_ID);
 
 
     public static void debug(String message){
