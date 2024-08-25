@@ -7,19 +7,22 @@ import org.hiedacamellia.crazyelytra.CrazyElytra;
 public class EnglishLanguageProvider extends LanguageProvider {
 
     public EnglishLanguageProvider(PackOutput output) {
-        super(output, CrazyElytra.MODID, "en_us");
+        super(output, CrazyElytra.MOD_ID, "en_us");
     }
 
     @Override
     protected void addTranslations() {
-        add("mod.crazyelytra", "Crazy Elytra");
-        add("config.crazyelytra.title", "Crazy Elytra Config");
-        add("config.crazyelytra.enableelytra", "Enable Crazy Elytra");
-        add("config.crazyelytra.enableelytra.desc", "If true, the Crazy Elytra will be enabled");
-        add("config.crazyelytra.airresistance", "Air Resistance");
-        add("config.crazyelytra.infinitefireworkacceleration", "Infinite FireWork Acceleration");
-        add("config.crazyelytra.infinitefireworkacceleration.desc", "If true, the player can be infinitely accelerated by fireworks");
-        add("config.crazyelytra.fireworkacceleration", "The acceleration of the firework");
-        add("config.crazyelytra.comfirm", "Comfirm");
+        add("mod.crazy_elytra", "Crazy Elytra");
+        add("config.crazy_elytra.title", "Crazy Elytra Config");
+        add("config.crazy_elytra.enableelytra", "Enable Crazy Elytra");
+        add("config.crazy_elytra.enableelytra.desc", "If true, the Crazy Elytra will be enabled");
+        add("config.crazy_elytra.airresistance", "Air Resistance");
+        add("config.crazy_elytra.infinitefireworkacceleration", "Infinite FireWork Acceleration");
+        add("config.crazy_elytra.infinitefireworkacceleration.desc", "If true, the player can be infinitely accelerated by fireworks");
+        add("config.crazy_elytra.fireworkacceleration", "The acceleration of the firework");
+        add("config.crazy_elytra.comfirm", "Comfirm");
+        add("enchantment.crazy_elytra.kamikaze_elytra", "Kamikaze Elytra");
+        add("deathScreen.title.kamikaze", "The target has been destroyed!");
+        add("death.attack.explosion.suicide", "");
     }
 }
