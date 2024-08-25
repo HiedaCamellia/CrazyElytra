@@ -9,6 +9,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.attachment.AttachmentType;
@@ -34,7 +35,7 @@ public class EntityEventSubscriber {
             AttachmentType<Integer> type = CEAttachmentTypes.FALL_FLYING_TICKS.get();
             int i = itemInChest.getEnchantmentLevel(CEEnchantments.get(level, CEEnchantments.KAMIKAZE_ELYTRA));
             if (itemInChest.canElytraFly(player) && i > 0 && !level.isClientSide) {
-                if (source.is(DamageTypeTags.IS_FALL) && player.getData(type) > 0 || source.is(DamageTypes.FLY_INTO_WALL)) {
+                if (source.is(DamageTypeTags.IS_FALL) && player.getData(type) > 0 && amount > 3.0F || source.is(DamageTypes.FLY_INTO_WALL)) {
                     player.stopFallFlying();
                     player.setData(CEAttachmentTypes.IS_EXPLODER, true);
                     itemInChest.hurtAndBreak(Mth.floor(amount), player, EquipmentSlot.CHEST);
@@ -50,6 +51,7 @@ public class EntityEventSubscriber {
         LivingEntity entity = event.getEntity();
         if (event.getSource().is(CEDamageTypes.SUICIDE_EXPLOSION)) {
             entity.setNoGravity(true);
+            entity.setDeltaMovement(Vec3.ZERO);
             if (entity instanceof ServerPlayer serverPlayer) {
                 CompletelyInvisibleS2CPacket packet = new CompletelyInvisibleS2CPacket(Boolean.TRUE);
                 PacketDistributor.sendToPlayer(serverPlayer, packet);
